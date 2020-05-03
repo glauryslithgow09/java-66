@@ -1,0 +1,65 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="color:#ff0000;background:#ccc" id="h1">Glaurys Lithgow
+    </h1>
+
+    <script>
+        addEventListener('DOMContentLoaded', inicio, false);
+
+        function inicio() {
+            document.getElementById('h1').addEventListener('mouseover', entrada, false);
+            document.getElementById('h1').addEventListener('mouseout', salida, false);
+        }
+
+        function entrada() {
+            document.getElementById('h1').style.backgroundColor = '#ffff00';
+            document.getElementById('h1').style.color = '#ff0000';
+        }
+
+        function salida() {
+            document.getElementById('h1').style.backgroundColor = 'white';
+            document.getElementById('h1').style.color = '#ff0000';
+        }
+    </script>
+
+</body>-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Glaurys</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <div style="width:500px;height:500px;background:#fffb00" id="recuadro1">
+        <h1>Conteo</h1>
+        <p id="cantidad">100</p>
+    </div>
+
+    <script>
+        addEventListener('DOMContentLoaded', inicio, false);
+
+        function inicio() {
+            document.getElementById('recuadro1').addEventListener('mousemove', mover, false);
+        }
+
+        function mover() {
+            var y = parseInt(document.getElementById('cantidad').innerHTML);
+            y++;
+            document.getElementById('cantidad').innerHTML = y;
+        }
+    </script>
+
+</body>
+
+</html>
